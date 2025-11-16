@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Tuban - Tuban Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DEWI RATU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Destinasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-alam.html">Wisata Alam</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-budaya.html">Budaya & Sejarah</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-buatan.html">Wisata Buatan</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="../destinasi/wisata-religi.html">Wisata Religi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Akomodasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-hotel.html">Hotel</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-kuliner.html">Kuliner</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-restoran.html">Restoran</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../artikel/semua-artikel.html">Artikel Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header class="page-header text-white text-center d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/img/destinasi-header-placeholder-religi.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <p class="mb-1 text-primary-color small fw-bold mt-5 pt-3">DESTINASI</p>
+            <h1 class="display-5 fw-bold text-accent-color">Ziarah & Wisata Religi Tuban</h1>
+            <p class="lead">Mengunjungi makam para wali dan situs-situs suci di Kota Wali.</p>
+        </div>
+    </header>
+
+    <section id="destinasi-list" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-bonang.jpg', 'Makam Sunan Bonang: Wali Songo Pendakwah Seni')">
+                            <img src="../../assets/img/makam sunan bonang.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Makam Sunan Bonang">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">1. Makam Sunan Bonang</h5>
+                            <p class="card-text small text-muted">Kompleks ziarah salah satu Wali Songo, Raden Maulana Makdum Ibrahim, yang dikenal berdakwah melalui kesenian.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Belakang Masjid Agung Tuban
+                            <a href="https://maps.app.goo.gl/ZEedyMjFoPR6NcVT6" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-masjid-agung.jpg', 'Masjid Agung Tuban: Simbol Kejayaan Islam Kota Wali')">
+                            <img src="../../assets/img/masjid agung.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Masjid Agung Tuban">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">2. Masjid Agung Tuban</h5>
+                            <p class="card-text small text-muted">Masjid kebanggaan masyarakat Tuban dengan arsitektur menawan, terletak persis di sebelah barat Alun-alun kota.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Alun-Alun Tuban
+                            <a href="https://maps.app.goo.gl/ujVfnL88Na7DhVuF6" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-perut-bumi.jpg', 'Masjid Perut Bumi: Unik dan Penuh Spiritual')">
+                            <img src="../../assets/img/Masjid Aschabul Kahfi.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Masjid Aschabul Kahfi">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">3. Masjid Perut Bumi Al-Maghribi</h5>
+                            <p class="card-text small text-muted">Masjid unik yang dibangun di dalam gua alami, menawarkan nuansa spiritual yang kuat dengan stalaktit dan stalagmit.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Semanding
+                            <a href="https://maps.app.goo.gl/mp5jmFTaWgYQY5857" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-asmoroqondi.jpg', 'Makam Syekh Asmoroqondi: Ayahanda Sunan Ampel')">
+                            <img src="../../assets/img/Makam Syekh Maulana Ibrahim Asmoroqondi.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Makam Syekh Maulana Ibrahim Asmoroqondi">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">4. Makam Syekh Asmoroqondi</h5>
+                            <p class="card-text small text-muted">Makam tokoh penting penyebar Islam, ayah dari Sunan Ampel, yang terletak di wilayah pesisir Tuban.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Desa Gesikharjo, Palang
+                            <a href="https://maps.app.goo.gl/bAXZWnhRnPyukk2F7" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-sunan-geseng.jpg', 'Makam Sunan Geseng: Murid Setia Sunan Kalijaga')">
+                            <img src="../../assets/img/Makam Sunan Geseng.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Makam Sunan Geseng">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">5. Makam Sunan Geseng</h5>
+                            <p class="card-text small text-muted">Kompleks ziarah Kyai Cokrojoyo, salah satu murid Sunan Kalijaga yang setia dan memiliki kisah mistis di balik namanya.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Krajan, Semanding
+                            <a href="https://maps.app.goo.gl/rUoPh92nFb1Li6Lu6" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/destinasi/religi-klenteng.jpg', 'Klenteng Kwan Sing Bio: Ikon Toleransi Tuban')">
+                            <img src="../../assets/img/Kwan Sing Bio.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Klenteng Kwan Sing Bio">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">6. Klenteng Kwan Sing Bio</h5>
+                            <p class="card-text small text-muted">Klenteng besar yang indah di tepi pantai. Menjadi simbol toleransi dan kerukunan umat beragama di Tuban.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Dekat Pelabuhan Tuban
+                            <a href="https://maps.app.goo.gl/wppvbtmzk9wctibf8" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-primary-color">TUBAN TOURISM</h5>
+                    <p class="small text-muted">
+                        Jelajahi keindahan Bumi Wali. Kami berkomitmen memberikan
+                        informasi terbaik tentang destinasi, akomodasi, dan budaya Tuban.
+                    </p>
+                    <p class="small text-muted">Jl. Veteran No. 10, Tuban, Jawa Timur.</p>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link">Wisata Alam</a>
+                        </li>
+                        <li>
+                            <a href="../akomodasi/akomodasi-hotel.html" class="footer-link">Akomodasi</a>
+                        </li>
+                        <li>
+                            <a href="../artikel/semua-artikel.html" class="footer-link">Artikel Terbaru</a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="footer-link">Galeri Foto & Video</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Web Terkait</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Pemda Tuban</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Dinas Pariwisata</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Informasi Event</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-accent-color">Ikuti Kami</h5>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 footer-divider" />
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">
+                        &copy; 2025 Tuban Tourism. Dikelola dengan semangat pariwisata
+                        Tuban.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-secondary-dark border-accent-left-thin">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-primary-color" id="imageModalLabel">Detail Gambar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" class="img-fluid rounded" alt="Gambar Destinasi Religi Tuban">
+                </div>
+                <div class="modal-footer border-0">
+                    <p id="modalCaption" class="text-muted w-100 text-start small mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

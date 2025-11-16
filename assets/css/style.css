@@ -1,0 +1,259 @@
+/* Definisikan Variabel Warna Utama untuk Dark Mode + Emas */
+:root {
+    --primary-color: #FFC300; 
+    --accent-color: #DAA520; 
+    --bg-dark: #121212; 
+    --bg-secondary-dark: #1e1e1e; /* Digunakan untuk Navbar, Card, dan Footer */
+    --bg-tertiary-dark: #282828; /* BACKGROUND BARU untuk section 2 kolom (sedikit lebih terang) */
+    --text-light: #F8F8FF;
+    --text-muted: #A9A9A9;
+    --font-family-base: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--bg-dark); /* Background Gelap */
+    color: var(--text-light); /* Teks Cerah */
+}
+
+/* --- TEMA NAVBAR --- */
+
+#main-navbar {
+    background-color: var(--bg-secondary-dark); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+#main-navbar .navbar-brand,
+#main-navbar .nav-link {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+#main-navbar .nav-link:hover, 
+#main-navbar .nav-link.active {
+    color: var(--primary-color); /* Hover dan Active menjadi Emas */
+}
+
+/* --- DROPDOWN MENU --- */
+.dropdown-menu {
+    background-color: var(--bg-secondary-dark);
+    border: 1px solid var(--accent-color);
+}
+.dropdown-menu .dropdown-item {
+    color: var(--text-light);
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-dark); /* Teks gelap saat hover di atas Emas */
+}
+.dropdown-menu .dropdown-divider {
+    border-top: 1px solid var(--accent-color);
+}
+
+/* --- HERO SLIDESHOW --- */
+
+.carousel-item img {
+    height: 90vh; 
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* --- TEMA TEKS & TOMBOL --- */
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-accent-color {
+    color: var(--accent-color) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.btn-primary-color {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--bg-dark); /* Teks Gelap pada tombol Emas */
+    font-weight: 600;
+}
+
+.btn-primary-color:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+/* Tombol Aksen untuk Hero (Lihat Semua Artikel) */
+.btn-accent-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.btn-accent-outline:hover {
+    color: var(--bg-dark); 
+    background-color: var(--primary-color);
+}
+
+/* --- TEMA CARD/KARTU --- */
+
+.card {
+    background-color: var(--bg-secondary-dark) !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--text-light);
+}
+
+.bg-secondary-dark {
+    background-color: var(--bg-secondary-dark) !important;
+}
+
+/* Aksen pada Card Artikel */
+.border-accent-left {
+    border-left: 5px solid var(--primary-color);
+}
+
+/* --- TEMA FOOTER --- */
+.footer {
+    background-color: var(--bg-secondary-dark); /* Footer gelap */
+    border-top: 1px solid var(--accent-color);
+}
+
+.footer-link {
+    color: var(--text-muted); /* Teks tautan awal abu-abu/muted */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+.footer-link:hover {
+    color: var(--primary-color); /* Teks Emas saat hover */
+}
+
+.footer-divider {
+    border-top: 1px solid var(--bg-dark); /* Garis pemisah yang halus */
+    opacity: 0.5;
+}
+
+/* Ikon Media Sosial */
+.social-icon {
+    color: var(--text-muted); /* Ikon awal abu-abu */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--primary-color); /* Ikon Emas saat hover */
+}
+
+/* Utility Class untuk membuat gambar card memenuhi tinggi */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.list-group-item {
+    border-color: rgba(255, 255, 255, 0.1) !important; /* Memperjelas pemisah list */
+}
+
+/* Efek Hover untuk List Item (Artikel) */
+.list-hover {
+    transition: background-color 0.3s;
+    border-left: 2px solid transparent; /* Border default transparan */
+}
+
+.list-hover:hover {
+    background-color: var(--bg-dark) !important; /* Background di bawah tertiary (darker) saat hover */
+    border-left: 2px solid var(--primary-color) !important; /* Border Emas saat hover */
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: var(--text-light); /* Warna teks default Putih Cerah */
+    transition: color 0.3s;
+}
+
+.list-group-item a:hover {
+    color: var(--primary-color) !important; /* Teks berubah menjadi Emas saat hover */
+}
+
+/* Wrapper List */
+.list-group-scrollable {
+    
+    overflow-y: auto;
+    /* Memberi border emas tipis pada wrapper list */
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 6px;
+}
+
+/* Item List Video */
+.list-video-item {
+    background-color: var(--bg-dark); /* Background Item sama dengan body (Dark) */
+    color: var(--text-light); /* Warna Huruf Putih Cerah */
+    border-bottom: 1px solid var(--bg-secondary-dark) !important; /* Pemisah item list */
+    transition: background-color 0.3s, color 0.3s, border-left 0.3s;
+    border-left: 5px solid transparent; /* Border default transparan */
+}
+
+.list-video-item:last-child {
+    border-bottom: none !important; /* Hilangkan border di item terakhir */
+}
+
+/* Efek Hover */
+.list-video-item:hover,
+.list-video-item:focus {
+    background-color: var(--bg-secondary-dark) !important; /* Background Item saat hover (sedikit lebih terang) */
+    color: var(--primary-color) !important; /* Warna Huruf Emas saat hover */
+    border-left: 5px solid var(--primary-color) !important; /* Border kiri Emas saat hover */
+    
+    /* Mengatasi bug box-shadow default Bootstrap pada hover list-group-item-action */
+    box-shadow: none !important; 
+}
+
+/* ... Tambahkan di akhir assets/css/style.css Anda ... */
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Membuat ikon 'X' terlihat putih/emas pada background gelap */
+}
+
+.hover-zoom {
+    cursor: pointer; /* Menandakan bahwa gambar dapat diklik */
+}
+
+/* ... Tambahkan di akhir assets/css/style.css Anda ... */
+
+.caption {
+    color: var(--text-muted); /* Warna Caption abu-abu lembut */
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    margin-top: 5px; /* Jarak dari gambar */
+}
+
+/* Penyesuaian agar hover zoom tetap berfungsi rapi dengan caption */
+.col-6 a {
+    display: block; /* Memastikan tautan mengisi lebar kolom */
+    text-decoration: none;
+}
+
+/* --- HEADER Halaman Sub-Menu (untuk wisata-alam.html) --- */
+
+.page-header {
+    min-height: 40vh; /* Tinggi header lebih pendek dari hero utama */
+    padding-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/img/destinasi-header-placeholder.jpg') no-repeat center center/cover;
+    /* Ganti gambar placeholder di atas dengan gambar alam Tuban */
+    border-bottom: 2px solid var(--primary-color);
+}

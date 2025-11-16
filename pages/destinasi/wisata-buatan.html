@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Buatan Tuban - Tuban Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DEWI RATU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Destinasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-alam.html">Wisata Alam</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-budaya.html">Budaya & Sejarah</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="../destinasi/wisata-buatan.html">Wisata Buatan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-religi.html">Wisata Religi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Akomodasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-hotel.html">Hotel</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-kuliner.html">Kuliner</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-restoran.html">Restoran</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../artikel/semua-artikel.html">Artikel Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header class="page-header text-white text-center d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/destinasi-header-placeholder-buatan.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <p class="mb-1 text-primary-color small fw-bold mt-5 pt-3">DESTINASI</p>
+            <h1 class="display-5 fw-bold text-accent-color">Wisata Buatan Tuban</h1>
+            <p class="lead">Menjelajahi ruang publik, edukasi, dan wahana rekreasi modern di Tuban.</p>
+        </div>
+    </header>
+
+    <section id="destinasi-list" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-alun.jpg', 'Alun-Alun Tuban: Pusat Kota dan Rekreasi')">
+                            <img src="../../assets/img/budaya-alun-alun.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Alun-alun Tuban">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">1. Alun-alun Tuban</h5>
+                            <p class="card-text small text-muted">Ruang publik utama kota Tuban, tempat berkumpul, rekreasi keluarga, dan kuliner malam hari.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Pusat Kota
+                            <a href="https://www.google.com/maps/search/Alun-alun+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-jatiwangi.jpg', 'Jatiwangi Park: Wahana Air dan Bermain Modern')">
+                            <img src="../../assets/img/jatiwangi park.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Jatiwangi Park">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">2. Jatiwangi Park</h5>
+                            <p class="card-text small text-muted">Taman rekreasi modern dengan berbagai wahana air dan fasilitas bermain yang cocok untuk keluarga.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Jatiwangi
+                            <a href="https://www.google.com/maps/search/Jatiwangi+Park" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-tanazawi.jpg', 'Tanazawi Edupark: Wisata Edukasi Pertanian')">
+                            <img src="../../assets/img/Tanazawi Edupark.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Tanazawi Agriculture Edupark & Leisure">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">3. Tanazawi Edupark</h5>
+                            <p class="card-text small text-muted">Taman edukasi dan rekreasi yang berfokus pada pertanian dan alam, menawarkan pengalaman belajar yang menyenangkan.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Plumpang
+                            <a href="https://www.google.com/maps/search/Tanazawi+Agriculture+EduPark" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-klumpit.jpg', 'Agro Park Klumpit: Kebun Buah dan Peternakan')">
+                            <img src="../../assets/img/Agro Park Klumpit tuban.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Agro Park Klumpit">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">4. Agro Park Klumpit</h5>
+                            <p class="card-text small text-muted">Kawasan wisata agro yang menyajikan kebun buah, peternakan, dan spot foto menarik di area perbukitan.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Soko
+                            <a href="https://www.google.com/maps/search/Agro-Park-Klumpit-tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-pelang.jpg', 'Ekowisata Pelang: Menjelajahi Kebun Sagu')">
+                            <img src="../../assets/img/wisata pelang.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Ekowisata Pelang">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">5. Ekowisata Pelang</h5>
+                            <p class="card-text small text-muted">Destinasi yang memadukan wisata alam dan edukasi dengan fokus pada kebun sagu yang dikelola secara berkelanjutan.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Desa Pelang, Kec. Jenu
+                            <a href="https://maps.app.goo.gl/ApPyP1qKhbGn4uva8" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../assets/img/destinasi/buatan-batik.jpg', 'Kampung Batik Margorejo: Belajar dan Berbelanja')">
+                            <img src="../../assets/img/batik tuban.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Kampung Batik Margorejo">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">6. Kampung Batik Margorejo</h5>
+                            <p class="card-text small text-muted">Kawasan sentra industri rumahan batik Tuban, menawarkan *workshop* singkat dan produk batik berkualitas.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Desa Margorejo
+                            <a href="https://maps.app.goo.gl/Vq86qKpxZzH8d8BJA" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-primary-color">TUBAN TOURISM</h5>
+                    <p class="small text-muted">
+                        Jelajahi keindahan Bumi Wali. Kami berkomitmen memberikan
+                        informasi terbaik tentang destinasi, akomodasi, dan budaya Tuban.
+                    </p>
+                    <p class="small text-muted">Jl. Veteran No. 10, Tuban, Jawa Timur.</p>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link">Wisata Alam</a>
+                        </li>
+                        <li>
+                            <a href="../akomodasi/akomodasi-hotel.html" class="footer-link">Akomodasi</a>
+                        </li>
+                        <li>
+                            <a href="../artikel/semua-artikel.html" class="footer-link">Artikel Terbaru</a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="footer-link">Galeri Foto & Video</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Web Terkait</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Pemda Tuban</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Dinas Pariwisata</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Informasi Event</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-accent-color">Ikuti Kami</h5>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 footer-divider" />
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">
+                        &copy; 2025 Tuban Tourism. Dikelola dengan semangat pariwisata
+                        Tuban.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

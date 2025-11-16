@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garang Asem - Kuliner Khas</title>
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tautan ke Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tautan ke CSS Kustom (Path disesuaikan: mundur dua tingkat dari folder destinasi) -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Tautan Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ============================================== -->
+    <!-- NAVIGASI (Perubahan Class 'active' ke Destinasi -> Kuliner) -->
+    <!-- ============================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DEWI RATU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+                            data-bs-toggle="dropdown">Destinasi</a>
+                        <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../destinasi/wisata-alam.html">Wisata Alam</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../destinasi/wisata-budaya.html">Budaya & Sejarah</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../destinasi/wisata-buatan.html">Wisata Buatan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../destinasi/wisata-religi.html">Wisata Religi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+                            data-bs-toggle="dropdown">Akomodasi</a>
+                        <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../akomodasi/akomodasi-hotel.html">Hotel</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../akomodasi/akomodasi-kuliner.html">Kuliner</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../akomodasi/akomodasi-restoran.html">Restoran</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../artikel/semua-artikel.html">Artikel Wisata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================== -->
+    <!-- HEADER DETAIL KULINER -->
+    <!-- ============================================== -->
+    <header class="page-header text-white text-center d-flex align-items-center justify-content-center"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/img/destinasi/kuliner-header.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <p class="mb-1 text-primary-color small fw-bold mt-5 pt-3">WISATA KULINER KHAS</p>
+            <h1 class="display-5 fw-bold text-accent-color">Garang Asem</h1>
+            <p class="lead">Sensasi pedas, asam, dan gurih yang dibungkus rapi dalam daun pisang.</p>
+        </div>
+    </header>
+
+    <!-- ============================================== -->
+    <!-- KONTEN ARTIKEL DETAIL -->
+    <!-- ============================================== -->
+    <section id="detail-content" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom Gambar dan Peta -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-secondary-dark shadow-lg border-accent-left-thin">
+                        <img src="../../assets/img/destinasi/kuliner-garangasem.jpg"
+                            class="card-img-top object-fit-cover" style="height: 250px;" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold text-primary-color">Pencarian Kuliner di Tuban</h6>
+                            <p class="card-text small text-muted">Temukan lokasi restoran atau warung yang menyajikan
+                                Garang Asem terbaik di Tuban.</p>
+                            <a href="https://www.google.com/maps/search/Warung+Garang+Asem+Tuban" target="_blank"
+                                class="btn btn-primary-color w-100 mt-2">
+                                <i class="fas fa-search-location me-2"></i> Cari Lokasi di Google Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Artikel -->
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-primary-color mb-4">Resep Khas: Pedas, Asam, Menggugah Selera</h2>
+
+                    <!-- Paragraf 1: Pengenalan dan Rasa Unik -->
+                    <p class="text-muted">
+                        Garang Asem adalah salah satu warisan kuliner Nusantara yang memiliki cita rasa kompleks dan
+                        unik. Hidangan ini dikenal dengan kombinasi rasa yang kuat: pedas dari cabai, asam segar dari
+                        belimbing wuluh atau tomat hijau, serta gurih dari santan kental dan rempah-rempah. Bahan utama
+                        Garang Asem umumnya adalah daging ayam atau kadang daging sapi, yang dipotong-potong kecil.
+                        Karakteristik paling khas dari hidangan ini adalah cara penyajiannya yang dibungkus rapi dalam
+                        daun pisang, kemudian dikukus hingga matang sempurna, menghasilkan aroma yang sangat menggugah
+                        selera.
+                    </p>
+
+                    <!-- Paragraf 2: Bumbu dan Bahan Kunci -->
+                    <p class="text-muted">
+                        Kunci kelezatan Garang Asem terletak pada kekayaan bumbu yang digunakan. Bumbu dasar yang wajib
+                        ada meliputi bawang merah, bawang putih, cabai rawit utuh atau iris, dan irisan belimbing wuluh
+                        (atau asam jawa untuk versi yang lebih pekat). Selain itu, bumbu seperti daun salam, lengkuas,
+                        dan serai juga ditambahkan untuk memperkuat aroma. Semua bumbu segar ini dimasukkan langsung ke
+                        dalam potongan daging bersama santan. Belimbing wuluh, sebagai penambah rasa asam, tidak hanya
+                        memberikan kesegaran, tetapi juga menyeimbangkan rasa gurih santan.
+                    </p>
+
+                    <!-- Paragraf 3: Teknik Memasak yang Mengunci Aroma -->
+                    <p class="text-muted">
+                        Teknik memasak Garang Asem merupakan hal yang membedakannya dari masakan berkuah lainnya.
+                        Setelah semua bumbu dan santan tercampur dengan daging dan dimasukkan ke dalam bungkusan daun
+                        pisang, bungkusan tersebut kemudian diikat dan dikukus selama kurang lebih satu jam. Proses
+                        pengukusan di dalam daun pisang inilah yang sangat krusial. Daun pisang bekerja seperti panci
+                        tertutup alami, memerangkap semua uap, aroma rempah, dan sari daging. Hasilnya adalah daging
+                        yang sangat empuk dan kuah kental dengan aroma harum yang khas dari daun pisang.
+                    </p>
+
+                    <!-- Paragraf 4: Penyajian dan Kehadiran di Tuban -->
+                    <p class="text-muted">
+                        Garang Asem paling nikmat disajikan panas-panas, langsung dari bungkusan daun pisangnya,
+                        ditemani nasi putih pulen dan lauk pelengkap seperti tempe atau tahu bacem. Hidangan ini sangat
+                        cocok dinikmati saat cuaca dingin karena rasa pedas dan kuah hangatnya dapat menghangatkan
+                        tubuh. Meskipun Garang Asem dikenal luas di Jawa Tengah, hidangan ini juga populer di Tuban
+                        sebagai salah satu menu andalan di warung makan lokal, menawarkan kehangatan cita rasa
+                        tradisional yang menjadi bagian tak terpisahkan dari wisata kuliner Tuban.
+                    </p>
+
+                    <div class="alert alert-warning-custom mt-4 p-3 small">
+                        <i class="fas fa-utensils me-2"></i> Rekomendasi: Untuk rasa yang lebih maksimal, buka bungkusan
+                        daun pisang Garang Asem sesaat sebelum Anda akan menyantapnya.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- FOOTER (Path disesuaikan) -->
+    <!-- ============================================== -->
+    <footer class="footer mt-auto py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-primary-color">TUBAN TOURISM</h5>
+                    <p class="small text-muted">
+                        Jelajahi keindahan Bumi Wali. Kami berkomitmen memberikan
+                        informasi terbaik tentang destinasi, akomodasi, dan budaya Tuban.
+                    </p>
+                    <p class="small text-muted">Jl. Veteran No. 10, Tuban, Jawa Timur.</p>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="../destinasi/wisata-alam.html" class="footer-link">Wisata Alam</a>
+                        </li>
+                        <li>
+                            <a href="../akomodasi/akomodasi-hotel.html" class="footer-link">Akomodasi</a>
+                        </li>
+                        <li>
+                            <a href="../artikel/semua-artikel.html" class="footer-link">Artikel Terbaru</a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="footer-link">Galeri Foto & Video</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Web Terkait</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Pemda Tuban</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Dinas Pariwisata</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Informasi Event</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-accent-color">Ikuti Kami</h5>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 footer-divider" />
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">
+                        &copy; 2025 Tuban Tourism. Dikelola dengan semangat pariwisata
+                        Tuban.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tautan ke Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tautan ke JavaScript Kustom (Path disesuaikan) -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

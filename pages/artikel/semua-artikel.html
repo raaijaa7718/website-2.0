@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Wisata Tuban - Tuban Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .article-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: 1px solid var(--accent-color);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2);
+        }
+        .article-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DEWI RATU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Destinasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-alam.html">Wisata Alam</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-budaya.html">Budaya & Sejarah</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-buatan.html">Wisata Buatan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-religi.html">Wisata Religi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Akomodasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-hotel.html">Hotel</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-kuliner.html">Kuliner</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-restoran.html">Restoran</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../artikel/semua-artikel.html">Artikel Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header class="page-header text-white text-center d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/artikel-header-placeholder.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <p class="mb-1 text-primary-color small fw-bold mt-5 pt-3">BLOG & INFO</p>
+            <h1 class="display-5 fw-bold text-accent-color">Artikel Wisata Terbaru</h1>
+            <p class="lead">Temukan inspirasi dan tips perjalanan terbaik untuk menjelajahi Tuban.</p>
+        </div>
+    </header>
+
+    <section id="artikel-list" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-12">
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/alam-gua-akbar.jpg" class="img-fluid rounded-start" alt="Gua Akbar Tuban">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Mengintip Keindahan Gua Akbar, Keajaiban Bawah Tanah Tuban</h5>
+                                    <p class="card-text small text-muted">Gua yang berada tepat di tengah kota ini menawarkan stalaktit dan stalagmit yang memukau. Pelajari sejarah dan jam operasionalnya sebelum berkunjung.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 14 Nov 2025 | ✍️ Admin</small></p>
+                                    <a href="gua-akbar.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/religi-bonang.jpg" class="img-fluid rounded-start" alt="Makam Sunan Bonang">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Panduan Lengkap Ziarah ke Makam Sunan Bonang di Kota Wali</h5>
+                                    <p class="card-text small text-muted">Makam salah satu Wali Songo ini menjadi pusat spiritual di Tuban. Ketahui tata cara, waktu terbaik, dan fasilitas di sekitar kompleks makam.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 10 Nov 2025 | ✍️ Tim Religi</small></p>
+                                    <a href="makam-sunan-bonang.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/alam-pantai-kelapa.jpg" class="img-fluid rounded-start" alt="Pantai Kelapa">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Chill di Pantai Kelapa: Spot Foto Instagenic Ribuan Pohon Kelapa</h5>
+                                    <p class="card-text small text-muted">Destinasi favorit wisatawan lokal dan luar kota. Nikmati suasana pantai yang sejuk dan pemandangan *sunset* di antara barisan pohon kelapa.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 05 Nov 2025 | ✍️ Travel Blogger</small></p>
+                                    <a href="pantai-kelapa.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/kuliner/kuliner-rajungan.jpg" class="img-fluid rounded-start" alt="Rajungan Remason">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Bumbu Pedas yang Meledak: Mencicipi Kelezatan Rajungan Remason Tuban</h5>
+                                    <p class="card-text small text-muted">Kuliner *seafood* yang wajib dicoba. Kuah kare kental pedas yang diolah dengan rajungan segar dari laut Pantura. Kami berikan rekomendasi warung terbaik!</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 28 Okt 2025 | ✍️ Food Hunter</small></p>
+                                    <a href="masakan-rajungan.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/budaya-museum.jpg" class="img-fluid rounded-start" alt="Museum Kambang Putih">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Jejak Kerajaan Majapahit di Museum Kambang Putih Tuban</h5>
+                                    <p class="card-text small text-muted">Mengupas koleksi peninggalan bersejarah Tuban mulai dari masa kerajaan hingga masa kolonial yang tersimpan rapi di museum ini.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 19 Okt 2025 | ✍️ Sejarawan Lokal</small></p>
+                                    <a href="kambang-putih.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/akomodasi/hotel-fave.jpg" class="img-fluid rounded-start" alt="Fave Hotel Tuban">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Review Hotel Bintang Tiga Terbaik di Tuban: Favehotel Tuban</h5>
+                                    <p class="card-text small text-muted">Ulasan mendalam mengenai fasilitas, pelayanan, dan kenyamanan menginap di Favehotel Tuban. Cocok untuk pelancong bisnis dan keluarga.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 12 Okt 2025 | ✍️ Reviewer Hotel</small></p>
+                                    <a href="fave-hotel.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/alam-pantai-sowan.jpg" class="img-fluid rounded-start" alt="Pantai Sowan">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Menikmati Alam Asri Pantai Sowan dan Hutan Cemara</h5>
+                                    <p class="card-text small text-muted">Pantai yang dikelilingi hutan cemara yang rindang, menawarkan camping ground dan udara yang sejuk. Destinasi ideal untuk pecinta alam.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 01 Okt 2025 | ✍️ Tim Alam</small></p>
+                                    <a href="pantai-sowan.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/religi-klenteng.jpg" class="img-fluid rounded-start" alt="Klenteng Kwan Sing Bio">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Kwan Sing Bio: Simbol Toleransi dan Bangunan Megah di Tepi Laut</h5>
+                                    <p class="card-text small text-muted">Mengenal lebih dekat Klenteng Kwan Sing Bio yang ikonik dengan patung Dewa Perang dan arsitektur Tionghoa yang menawan di pesisir Tuban.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 25 Sep 2025 | ✍️ Budayawan</small></p>
+                                    <a href="kwan-sing-bio.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/destinasi/buatan-jatiwangi.jpg" class="img-fluid rounded-start" alt="Jatiwangi Park">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Liburan Seru di Jatiwangi Park: Wahana Air dan Rekreasi Keluarga</h5>
+                                    <p class="card-text small text-muted">Informasi lengkap tentang wahana, tiket masuk, dan fasilitas yang tersedia di Jatiwangi Park, destinasi wisata buatan favorit di Tuban.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 18 Sep 2025 | ✍️ Admin</small></p>
+                                    <a href="jatiwangi-park.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 article-card bg-secondary-dark shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../assets/img/kuliner/kuliner-garang.jpg" class="img-fluid rounded-start" alt="Garang Asem">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary-color">Menyegarkan Lidah dengan Garang Asem Khas Tuban</h5>
+                                    <p class="card-text small text-muted">Kenali bumbu rahasia di balik kuah asam pedas Garang Asem Ayam Kampung Tuban. Cocok untuk hidangan penghangat di musim hujan.</p>
+                                    <p class="card-text"><small class="text-accent-color">📅 10 Sep 2025 | ✍️ Tim Kuliner</small></p>
+                                    <a href="garang-asem.html" class="btn btn-sm btn-primary-color mt-2">Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Berikutnya</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-primary-color">TUBAN TOURISM</h5>
+                    <p class="small text-muted">
+                        Jelajahi keindahan Bumi Wali. Kami berkomitmen memberikan
+                        informasi terbaik tentang destinasi, akomodasi, dan budaya Tuban.
+                    </p>
+                    <p class="small text-muted">Jl. Veteran No. 10, Tuban, Jawa Timur.</p>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="../destinasi/wisata-alam.html" class="footer-link">Wisata Alam</a>
+                        </li>
+                        <li>
+                            <a href="../akomodasi/akomodasi-hotel.html" class="footer-link">Akomodasi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Artikel Terbaru</a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="footer-link">Galeri Foto & Video</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Web Terkait</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Pemda Tuban</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Dinas Pariwisata</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Informasi Event</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-accent-color">Ikuti Kami</h5>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 footer-divider" />
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">
+                        &copy; 2025 Tuban Tourism. Dikelola dengan semangat pariwisata
+                        Tuban.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Alam Tuban - DEWI RATU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DEWI RATU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Destinasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item active" href="../destinasi/wisata-alam.html">Wisata Alam</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-budaya.html">Budaya & Sejarah</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-buatan.html">Wisata Buatan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../destinasi/wisata-religi.html">Wisata Religi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinasiDropdown" role="button"
+              data-bs-toggle="dropdown">Akomodasi</a>
+            <ul class="dropdown-menu" aria-labelledby="destinasiDropdown">
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-hotel.html">Hotel</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-kuliner.html">Kuliner</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../akomodasi/akomodasi-restoran.html">Restoran</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../artikel/semua-artikel.html">Artikel Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header class="page-header text-white text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+            <p class="mb-1 text-primary-color small fw-bold mt-5 pt-3">DESTINASI</p>
+            <h1 class="display-5 fw-bold text-accent-color">Pesona Alam Tuban</h1>
+            <p class="lead">Nikmati keindahan pantai, goa, dan air terjun yang tersembunyi di Bumi Wali.</p>
+        </div>
+    </header>
+
+    <section id="destinasi-list" class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/kelapa.png', 'Pantai Kelapa Tuban: Ribuan Pohon Rindang')">
+                            <img src="../../assets/img/kelapa.png" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Pantai Kelapa">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">1. Pantai Kelapa</h5>
+                            <p class="card-text small text-muted">Wisata populer dengan ribuan pohon kelapa yang rindang. Cocok untuk bersantai dan menikmati sunset.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Semenanjung Utara Tuban
+                            <a href="https://www.google.com/maps/search/Pantai+Kelapa+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                         <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/goa.png', 'Goa Akbar: Keajaiban Stalaktit Bawah Kota')">
+                            <img src="../../assets/img/goa.png" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Goa Akbar">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">2. Goa Akbar</h5>
+                            <p class="card-text small text-muted">Goa alam dengan formasi stalaktit dan stalagmit yang menakjubkan, terletak strategis di bawah pasar kota Tuban.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Pusat Kota Tuban
+                            <a href="https://www.google.com/maps/search/Goa+Akbar+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/nglirip.jpg', 'Air Terjun Nglirip: Kolam Hijau Alami')">
+                            <img src="../../assets/img/nglirip.jpg" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Air Terjun Nglirip">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">3. Air Terjun Nglirip</h5>
+                            <p class="card-text small text-muted">Air terjun yang unik karena terbentuk dari batuan kapur. Memiliki kolam alami berwarna biru kehijauan.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Singgahan
+                            <a href="https://www.google.com/maps/search/Air+Terjun+Nglirip+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/mbeti.png', 'Pemandian Bektiharjo: Mata Air Sejuk dan Ritual')">
+                            <img src="../../assets/img/mbeti.png" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Pemandian Bektiharjo">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">4. Pemandian Alam Bektiharjo</h5>
+                            <p class="card-text small text-muted">Mata air alami yang sejuk, sering menjadi tempat ritual atau pemandian tradisional oleh masyarakat setempat.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Semanding
+                            <a href="https://www.google.com/maps/search/Pemandian+Alam+Bektiharjo+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/sowan.png', 'Pantai Sowan: Pantai Hutan yang Asri')">
+                            <img src="../../assets/img/sowan.png" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Pantai Sowan">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">5. Pantai Sowan</h5>
+                            <p class="card-text small text-muted">Pantai yang dikelilingi oleh hutan alami, memberikan suasana tenang dan sering digunakan untuk kegiatan berkemah.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Bancar
+                            <a href="https://www.google.com/maps/search/Pantai+Sowan+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-secondary-dark shadow-lg">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('../../assets/img/dermaga.png', 'Air Terjun Kedungjambe: Permata Tersembunyi')">
+                            <img src="../../assets/img/dermaga.png" class="card-img-top object-fit-cover hover-zoom" style="height: 200px; cursor: pointer;" alt="Air Terjun Kedungjambe">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary-color">6. Pantai Dermaga</h5>
+                            <p class="card-text small text-muted">Destinasi wisata baru, pesona senja, pasir putih indah, dan angin sepoi yang menenangkan.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary-dark">
+                            <i class="fas fa-map-marker-alt me-2 text-accent-color"></i> Kec. Jenu
+                            <a href="https://www.google.com/maps/search/Pantai+Dermaga+Tuban" target="_blank" class="btn btn-sm btn-primary-color float-end">Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-primary-color">TUBAN TOURISM</h5>
+                    <p class="small text-muted">
+                        Jelajahi keindahan Bumi Wali. Kami berkomitmen memberikan
+                        informasi terbaik tentang destinasi, akomodasi, dan budaya Tuban.
+                    </p>
+                    <p class="small text-muted">Jl. Veteran No. 10, Tuban, Jawa Timur.</p>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link">Wisata Alam</a>
+                        </li>
+                        <li>
+                            <a href="../akomodasi/akomodasi-hotel.html" class="footer-link">Akomodasi</a>
+                        </li>
+                        <li>
+                            <a href="../artikel/semua-artikel.html" class="footer-link">Artikel Terbaru</a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="footer-link">Galeri Foto & Video</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-accent-color">Web Terkait</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Pemda Tuban</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Dinas Pariwisata</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"><i class="fas fa-link me-2"></i> Informasi Event</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="fw-bold text-accent-color">Ikuti Kami</h5>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 footer-divider" />
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">
+                        &copy; 2025 Tuban Tourism. Dikelola dengan semangat pariwisata
+                        Tuban.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-secondary-dark border-accent-left-thin">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-primary-color" id="imageModalLabel">Detail Gambar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" class="img-fluid rounded" alt="Gambar Destinasi Tuban">
+                </div>
+                <div class="modal-footer border-0">
+                    <p id="modalCaption" class="text-muted w-100 text-start small mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
